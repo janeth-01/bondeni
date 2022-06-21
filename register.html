@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="reg.css">
+    <script>
+        function myPassword(str) {
+            if (str.length == 8) {
+                document.getElementById(loo).innerHTML = "";
+                return
+            } else {
+                document.getElementById(loo).innerHTML = "wrong password";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form>
+        <div class="full ">
+            <div class="jane" style="background:transparent ;">
+                <table>
+                    <caption><strong>REGISTER HERE</strong></caption>
+                    <tr>
+                        <td><label>First name</label></td>
+                        <td style="opacity:0.6 ;"><input type="text" name="first name" id="first name"></td>
+                    </tr><br>
+                    <tr>
+                        <td><label>middle name</label></td>
+                        <td style="opacity:0.6 ;"><input type="text" name="middle name"></td>
+                    </tr><br>
+                    <tr>
+                        <td><label>surname</label></td>
+                        <td style="opacity:0.6 ;"><input type="text" name="surname"></td>
+                    </tr><br>
+                    <tr>
+                        <td> <label>username</label></td>
+                        <td style="opacity:0.6 ;"><input type="text" name="username"></td>
+                    </tr><br>
+                    <tr>
+                        <td> <label>date of birth</label></td>
+                        <td style="opacity:0.6 ;"><input type="date" name="date of birth"></td>
+                    </tr><br>
+                    <tr>
+                        <td><label>password</label></td>
+                        <td style="opacity:0.6 ;"><input type="password" name="password" required="true" pattern="{8}"></td>
+                    </tr>
+                </table>
+                <div class="person">
+                    <button input="buttom" onclick="document.getElementById('mode').style.display=block">contact</button>
+                    <tr>
+                        <td> <label>email address</label></td>
+                        <td style="opacity:0.6 ;"> <input type="email" name="email" required="true" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"></td>
+                    </tr><br>
+                    <tr>
+                        <td><label>contact number</label></td>
+                        <td style="opacity:0.6 ;"><input type="charset" name="number"></td>
+                    </tr>
+                </div>
+
+            </div>
+        </div><input type="submit" name="submit"></div>
+
+
+    </form>
+
+</body>
+
+</html>
